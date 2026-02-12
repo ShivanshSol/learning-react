@@ -2,6 +2,8 @@ import './App.css';
 import ClassComp from './components/ClassComp'
 import FuncComp from './components/FuncComp'
 import ArrowFuncComp from './components/ArrowFuncComp'
+import StateComp from './components/StateComp'
+import PropStateComp from './components/PropStateComp'
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
         <FuncComp />
         <hr/>
         <ArrowFuncComp />
+        <hr/>
+        <StateComp />
+        <hr/>
+        <PropStateComp name='Shivansh' age={23} />
     </div>
   );
 }

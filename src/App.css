@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-h1{
+.App h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 33, 33);
+}
+.App h2{
   color: rgb(255, 255, 255);
   background-color: gray;
 }

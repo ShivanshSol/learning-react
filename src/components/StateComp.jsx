@@ -16,16 +16,16 @@ const StateComp = () => {
 
     return(
         <div>
-            <h1>This is State demonstration component</h1>
+            <h2>This is State demonstration component</h2>
         
             <button onClick={() => setnum(num+1)}>Increment</button>
             <button onClick={decrement}>Decrement</button>
-            <h2>{num}</h2>
+            <h3>{num}</h3>
 
-            <h2>LIve Name Change: My name is {name1}</h2>
+            <h3>LIve Name Change: My name is {name1}</h3>
             <input type="text" placeholder="Enter your name" onChange={(e) => setName1(e.target.value)} />
 
-            <h2>ON Click Name Change: My name is {name2}</h2>
+            <h3>ON Click Name Change: My name is {name2}</h3>
             <input type="text" placeholder="Enter your name" onChange={(e) => setTempName(e.target.value)} />
             <button onClick={() => setName2(tempname)}>Update Name</button>
         </div>

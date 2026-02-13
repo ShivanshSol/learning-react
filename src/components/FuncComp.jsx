@@ -2,7 +2,7 @@
 function FuncComp(){
     return(
         <div>
-            <h1>This is a Function component</h1>
+            <h2>This is a Function component</h2>
         </div>
     );
 }

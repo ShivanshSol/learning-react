@@ -2,7 +2,7 @@
 const ArrowFuncComp = () => {
     return(
         <div>
-            <h1>This is an Arrow Function component</h1>
+            <h2>This is an Arrow Function component</h2>
         </div>
     );
 }

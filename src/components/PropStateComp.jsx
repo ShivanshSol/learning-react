@@ -9,8 +9,8 @@ const PropStateComp = (props) => {
 
     return(
         <div>
-            <h1>This is Prop & State demonstration component</h1>
-            <h2>Props received: Name = {name}, Age = {age}</h2>
+            <h2>This is Prop & State demonstration component</h2>
+            <h3>Props received: Name = {name}, Age = {age}</h3>
 
             <p>Edit Name:</p>
             <input type="text" placeholder={props.name} onChange = {(e) => setTempName(e.target.value)}/>

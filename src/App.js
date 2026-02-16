@@ -1,12 +1,22 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import HomepageComp from './pages/HomepageComp';
-
+import BaseHOC from './hoc/withBaseHoc';
+import BaseLayout from './hoc/BaseLayout';
 
 function App() {
+  const EnhancedHomepage = BaseHOC(HomepageComp);
   return (
     <Routes>
-      <Route path ="/" element={<HomepageComp />}>
+      <Route path ="/homehoc" element={<EnhancedHomepage /> }>
+      </Route>
+      <Route path="/homelayout" element={
+          <BaseLayout>
+            <HomepageComp />
+          </BaseLayout>
+        } 
+      />
+      <Route path ="/home" element={<HomepageComp /> }>
       </Route>
     </Routes>
     // <div className="App">

@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HomepageComp from '../pages/HomepageComp';
 
-const BaseLayout = ({ children }) => {
+const BaseLayoutProps = ({ children }) => ({...props}) => {
     return (
         <div style={{
             display: 'flex', 
@@ -14,11 +14,11 @@ const BaseLayout = ({ children }) => {
         }}>
             <Header />
             
-            <main>{children}</main>
+            <component {...props}/>
             
             <HomepageComp />
             <Footer />
         </div>
     );
 };
-export default BaseLayout;
+export default BaseLayoutProps;

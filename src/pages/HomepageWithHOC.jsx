@@ -4,6 +4,7 @@ import FuncComp from '../components/FuncComp';
 import ArrowFuncComp from '../components/ArrowFuncComp';
 import StateComp from '../components/StateComp';
 import PropStateComp from '../components/PropStateComp';
+import BaseLayoutProps from '../hoc/BaseLayoutProps';
 
 const HomepageComp = () => {
     return(
@@ -26,4 +27,4 @@ const HomepageComp = () => {
     );
 };
 
-export default HomepageComp;
+export default BaseLayoutProps(HomepageComp);

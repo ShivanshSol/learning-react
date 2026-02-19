@@ -30,7 +30,7 @@ function App() {
         } 
       />
 
-      {/* method4 for layout-HOC  using basehoc at export of compone*/}
+      {/* method4 for layout-HOC  using basehoc at export of component*/}
       <Route path ="/home" element={<HomepageWithHOC /> }>
       </Route>
 
@@ -39,6 +39,7 @@ function App() {
       <Route path ="/home" element={<HomepageComp /> }>
       </Route>
     </Routes>
+
     // <div className="App">
     //     <p>
     //       Hello World! This is my first React App. I am learning React and this is my first project. I am excited to learn more about React and build amazing projects with it.

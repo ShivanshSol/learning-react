@@ -59,3 +59,17 @@ function App() {
 }
 
 export default App;
+
+// React life cycle methods are special methods that are called at different stages of a component's life. They are used to perform side effects, such as fetching data, updating the DOM, or cleaning up resources. The most commonly used lifecycle methods are:
+
+// 1. componentDidMount: This method is called after the component is mounted to the DOM. It is commonly used to fetch data from an API or set up event listeners.
+
+// 2. componentDidUpdate: This method is called after the component updates, either due to a change in props or state. It can be used to perform side effects based on the updated state or props.
+
+// 3. componentWillUnmount: This method is called just before the component is unmounted and destroyed. It is used to clean up any resources, such as event listeners or timers, that were set up in componentDidMount.
+
+// 4. shouldComponentUpdate: This method is called before rendering when new props or state are being received. It can be used to optimize performance by preventing unnecessary re-renders.
+
+// 5. getDerivedStateFromProps: This static method is called right before rendering when new props are received. It can be used to update the state based on the new props.
+
+// These lifecycle methods allow developers to manage the component's behavior and side effects effectively throughout its lifecycle.
